@@ -3,7 +3,7 @@
 # Install WordPress.
 wp core install \
   --path="/var/www/html" \
-  --url="http://localhost:${WORDPRESS_PORT}" \
+  --url="http://192.168.0.220:${WORDPRESS_PORT}" \
   --title="${WORDPRESS_TITLE}" \
   --admin_user="${WORDPRESS_ADMIN_USER}" \
   --admin_password="${WORDPRESS_ADMIN_PASSWORD}" \
