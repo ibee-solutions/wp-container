@@ -5,7 +5,7 @@ A docker compose environment for deploying Wordpress for developing and testing 
 ## Usage
 
 ### Setup
-Edit content of the .env file with the desired credentials, ports and other settings.
+Edit the bin/install.sh file and set the correct url (IP address) for wordpress. Then, edit content of the .env file with the desired credentials, ports and other settings.
 
 ### Install
 ```
