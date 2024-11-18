@@ -18,11 +18,17 @@ sudo sh wp-install.sh
 sudo sh wp-init.sh
 ```
 
+### Uninstall
+**WARNING: This script removes all information from the containers, including volumes. Use with caution.**
+```
+sudo sh wp-uninstall.sh
+```
+
 ## Developing a plugin
 If you want to use this instance to develop a plugin, you can paste or create the plugin folder in the root path of this repo (same path as `docker-compose.yml`) and uncomment the plugin volume mapping in the docker-compose.yml file under the wordpress service. Then, replace `PLUGIN-NAME` with the name of your plugin folder.
 
 ## Troubleshooting
-If for some reason the instance doesn't start or returns permissions errors when trying to connect to mysql, explicitly removing the volumes is the way to go:
+If for some reason the instance doesn't start or returns permissions errors when trying to connect to mysql, explicitly removing the volumes is the way to go. Only run these commands if you don't have other docker containers, otherwise please stop and remove each container separatly.
 ```
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
