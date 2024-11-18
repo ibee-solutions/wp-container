@@ -19,9 +19,9 @@ sudo sh wp-init.sh
 ```
 
 ### Uninstall
-**WARNING: This script removes all information from the containers, including volumes. Use with caution.**
+**WARNING: This script removes all information from the containers, including volumes. Use with caution.** For using it you must have your user added to the docker group, or run it with the root user.
 ```
-sudo sh wp-uninstall.sh
+./wp-uninstall.sh
 ```
 
 ## Developing a plugin
